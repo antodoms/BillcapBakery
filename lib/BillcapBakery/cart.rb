@@ -40,15 +40,13 @@ module BillcapBakery
   	final_print
   	end
 
-  	def run(value)
+  	def bulk(value)
   		line = value.split("\n")
   		line.each do |code|
   			additems(code)
   		end
   		printitems
   	end
-
-
 
   end
 end
