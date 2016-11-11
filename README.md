@@ -21,8 +21,26 @@ Or install it yourself as:
     $ gem install BillcapBakery
 
 ## Usage
+Please check the test script to understand more on the supporting functions for each module classes. This is a part of Trike challenge by Billcap
 
-TODO: Write usage instructions here
+```ruby
+@data = BillcapBakery::Cart.new
+@data.bulk("10 VS5\n14 MB11\n13 CF")
+
+#-> 
+#	10 VS5 $17.98
+#			2 x 5 $8.99
+#
+#	14 MB11 $54.8
+#			1 x 8 $24.95
+#			3 x 2 $9.95
+#
+#	13 CF $25.85
+#			2 x 5 $9.95
+#			1 x 3 $5.95
+
+```
+
 
 ## Development
 
